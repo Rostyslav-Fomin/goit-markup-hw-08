@@ -23,13 +23,11 @@
     <!-- Шапка -->
     <header class="page-header">
       <div class="container page-header__container">
-        <nav class="nav">
-          <a
-            class="logo"
-            href="./index.html"
-            aria-label="Логотип сайту Вебстудіо"
-            >Web<span class="logo--dark">Studio</span></a
-          >
+        <a class="logo page-header__logo" href="./index.html" aria-label="Логотип сайту Вебстудіо"
+          >Web<span class="logo--dark">Studio</span></a
+        >
+        <div class="page-header__menu">
+          <nav class="nav">
           <ul class="nav-list list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="./index.html"
@@ -60,7 +58,18 @@
               ><span>+38 096 111 11 11</span></a
             >
           </li>
+        </div>
+        
         </ul>
+        <button class="page-header__button" type="button">
+
+          <svg class="page-header__icon open" width="40" height="40">
+            <use href="./img/sprite-header-icons.svg#menu"></use>
+          </svg>
+          <svg class="page-header__icon close" width="40" height="40">
+            <use href="./img/sprite-header-icons.svg#close-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -163,8 +172,8 @@
       <section class="benefits section">
         <div class="container">
           <h2 class="section-tittle visually-hidden">Наші особливості</h2>
-          <ul class="benefits__list list grid">
-            <li class="benefits__item grid-item antenna">
+          <ul class="benefits__list list">
+            <li class="benefits__item">
               <div class="benefits__block">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./img/sprite.svg#antenna"></use>
@@ -176,7 +185,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="benefits__item grid-item clock">
+            <li class="benefits__item">
               <div class="benefits__block">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./img/sprite.svg#clock"></use>
@@ -188,7 +197,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="benefits__item grid-item diagram">
+            <li class="benefits__item">
               <div class="benefits__block">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./img/sprite.svg#diagram"></use>
@@ -199,7 +208,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benefits__item grid-item astronaut">
+            <li class="benefits__item">
               <div class="benefits__block">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./img/sprite.svg#astronaut"></use>
@@ -648,7 +657,7 @@
         </div>
         <div class="socials page-footer__socials">
           <p class="page-footer__text">приєднуйтесь</p>
-          <ul class="socials-list list">
+          <ul class="socials-list page-footer__list list">
             <li class="socials__item">
               <a
                 class="socials__link"
@@ -713,11 +722,11 @@
               />
               <div class="subscription__box">
                 <button class="button subscription__button" type="submit">
-                  Підписатися
+                  <span class="button__text">Підписатися</span>
+                  <svg class="button__img" width="32" height="32">
+                    <use href="./img/sprite.svg#send"></use>
+                  </svg>
                 </button>
-                <svg class="subscription__img" width="32" height="32">
-                  <use href="./img/sprite.svg#send"></use>
-                </svg>
               </div>
             </div>
           </form>

@@ -1,39 +1,64 @@
 /* Особливості */
 .benefits {
-	padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .benefits__item {
-	min-width: 270px;
+  max-width: 450px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 270px;
+  }
 }
 
 .benefits__block {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 120px;
-	margin-bottom: 30px;
-	border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
 
-	background-color: var(--background-color-2);
+  background-color: var(--background-color-2);
+
+  @media screen and (min-width: 1200px) {
+    min-width: 270px;
+  }
 }
 
 .benefits__subtittle {
-	color: var(--main-black-color);
+  color: var(--main-black-color);
 
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 1.2;
-	letter-spacing: 0.42px;
-	text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 
-	margin-bottom: 10px;
+  margin-bottom: 10px;
+
+  padding-bottom: 0;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .benefits__text {
-	color: var(--text-color);
+  color: var(--text-color);
 
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.42px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
 }

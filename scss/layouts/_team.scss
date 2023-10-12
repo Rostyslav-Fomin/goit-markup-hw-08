@@ -2,6 +2,12 @@
 .team {
   background-color: var(--background-color-2);
 }
+.team__list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;    
+  }
+}
 
 .team__item {
   border-bottom-right-radius: 4px;
@@ -14,11 +20,15 @@
 
 .team__conteiner {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-right: 32px;
   padding-left: 32px;
 
   background-color: var(--background-color-1);
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;    
+  }
 }
 
 .team__subtittle {

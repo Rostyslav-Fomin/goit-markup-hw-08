@@ -1,8 +1,14 @@
 /* Клієнти */
 .clients__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  margin: -15px;
+}
+.clients__item {
+  max-width: calc(100% / 2 - 30px);
+  margin: 15px;
 }
 
 .clients__link {
