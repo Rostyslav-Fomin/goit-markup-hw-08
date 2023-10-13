@@ -26,7 +26,7 @@
         <a class="logo page-header__logo" href="./index.html" aria-label="Логотип сайту Вебстудіо"
           >Web<span class="logo--dark">Studio</span></a
         >
-        <div class="page-header__menu">
+        <div class="page-header__menu js-menu-container  mobile-menu" id="mobile-menu">
           <nav class="nav">
           <ul class="nav-list list">
             <li class="nav__item">
@@ -58,16 +58,18 @@
               ><span>+38 096 111 11 11</span></a
             >
           </li>
+          </ul>
+          <button class="page-header__button js-close-menu" type="button">
+          <svg class="page-header__icon " width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="page-header__icon--close" href="./img/sprite-header-icons.svg#close-menu" js-close-menu></use>
+          </svg>
+        </button>
         </div>
         
-        </ul>
-        <button class="page-header__button" type="button">
-
-          <svg class="page-header__icon open" width="40" height="40">
-            <use href="./img/sprite-header-icons.svg#menu"></use>
-          </svg>
-          <svg class="page-header__icon close" width="40" height="40">
-            <use href="./img/sprite-header-icons.svg#close-menu"></use>
+        
+        <button class="page-header__button  js-open-menu" type="button" aria-expanded="false" >
+          <svg class="page-header__icon " width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="page-header__icon--open" href="./img/sprite-header-icons.svg#menu"  js-open-menu></use>
           </svg>
         </button>
       </div>
@@ -734,5 +736,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

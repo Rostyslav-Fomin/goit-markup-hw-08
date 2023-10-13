@@ -1,20 +1,29 @@
 /* Шапка */
 .page-header {
   border-bottom: 1px solid var(--border-color);
+  position: relative;
 }
+
 .page-header__logo {
 	display: block;
 }
-.page-header__button {
-  position: relative;
 
-  display: block;
+.page-header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   width: 40px;
   height: 40px;
+  margin-left: auto;
+  padding: 0;
 
+  border: none;
   background-color: transparent;
-  border-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .page-header__icon {
@@ -25,14 +34,26 @@
 .page-header__button:focus & {
     fill: var(--accent-color);
   }
+
+  &--open {
+  .page-header__menu.is-open &--open {
+      display: none;
+    }
 }
-.open {
-  position: absolute;
+&--close {
+  display: none;
+
+  .page-header__menu.is-open &--close {
+    display: block;
+  }
 }
+}
+
 .page-header__container {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: flex;
+  display: flex;
     align-items: center;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    
     width: 480px;
   }
 
@@ -46,3 +67,20 @@
     align-items: center;
   }
 }
+.page-header__menu {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 93px;
+    width: 100%;
+  }
+}
+
+// .page-header__menu {
+//     position: absolute;
+//     top: 0;
+//       left: 0;
+//       width: 480px;
+//       height: 796px;
+//       background-color: var(--background-color-1);
+  
+// }
