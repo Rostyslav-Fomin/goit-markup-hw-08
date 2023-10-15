@@ -17,10 +17,13 @@
     align-items: baseline;
     flex-wrap: wrap;
   }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: space-around;
+    }
 }
 
 .page-footer__logo {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: inline-block;
     margin-bottom: 28px;
     padding: 0;
@@ -30,7 +33,10 @@
 /* Адреса */
 .address-container {
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
     width: 231px;
   }
@@ -76,8 +82,8 @@
 /* Соц. мережі */
 .page-footer__socials {
   @media screen and (max-width: 767px) {
-      margin-bottom: 60px;
-    }
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
@@ -85,7 +91,8 @@
 
 .page-footer__list {
   @media screen and (max-width: 767px) {
-justify-content: center;    }
+    justify-content: center;
+  }
 }
 
 .page-footer__text {
@@ -102,6 +109,12 @@ justify-content: center;    }
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+  .subscription & {
+    @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  }
+  
 }
 
 /* Форма */
@@ -133,9 +146,11 @@ justify-content: center;    }
     letter-spacing: 0.48px;
   }
 
-     @media screen and (max-width: 767px) {
-       margin-bottom: 20px;
-     }
+  @media screen and (max-width: 1199px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+
+  }
 }
 
 .subscription__button {

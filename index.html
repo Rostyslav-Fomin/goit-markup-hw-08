@@ -23,53 +23,105 @@
     <!-- Шапка -->
     <header class="page-header">
       <div class="container page-header__container">
-        <a class="logo page-header__logo" href="./index.html" aria-label="Логотип сайту Вебстудіо"
+        <a
+          class="logo page-header__logo"
+          href="./index.html"
+          aria-label="Логотип сайту Вебстудіо"
           >Web<span class="logo--dark">Studio</span></a
         >
-        <div class="page-header__menu js-menu-container  mobile-menu" id="mobile-menu">
+        <div
+          class="page-header__menu mobile-menu"
+          id="mobile-menu"
+          js-menu-container
+        >
           <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./index.html"
-                >Студія</a
+            <ul class="nav-list list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--current" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts list">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com"
+                ><svg class="contacts__icon" width="16" height="12">
+                  <use href="./img/sprite-header-icons.svg#envelope"></use>
+                </svg>
+                <span>info@devstudio.com</span></a
               >
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Контакти</a>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+380961111111"
+                ><svg class="contacts__icon" width="10" height="16">
+                  <use
+                    href="./img/sprite-header-icons.svg#smartphone"
+                  ></use></svg
+                ><span>+38 096 111 11 11</span></a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com"
-              ><svg class="contacts__icon" width="16" height="12">
-                <use href="./img/sprite-header-icons.svg#envelope"></use>
-              </svg>
-              <span>info@devstudio.com</span></a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111"
-              ><svg class="contacts__icon" width="10" height="16">
-                <use href="./img/sprite-header-icons.svg#smartphone"></use></svg
-              ><span>+38 096 111 11 11</span></a
-            >
-          </li>
+          <ul class="header-social__list list">
+            <li class="header-social__item">
+              <a href="https://www.instagram.com/" class="header-social__link" target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="icon Instagram">Instagram<span class="header-social__separator">|</span></a>
+            </li>
+            <li class="header-social__item">
+              <a href="https://twitter.com/" class="header-social__link" target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="icon Twitter">Twitter<span class="header-social__separator">|</span></a>
+            </li>
+            <li class="header-social__item">
+              <a href="https://uk-ua.facebook.com/" class="header-social__link" target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="icon Facebook">Facebook<span class="header-social__separator">|</span></a>
+            </li>
+            <li class="header-social__item">
+              <a href="https://ua.linkedin.com/" class="header-social__link"target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="icon Linkedin">Linkedin</a>
+            </li>
           </ul>
-          <button class="page-header__button js-close-menu" type="button">
-          <svg class="page-header__icon " width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use class="page-header__icon--close" href="./img/sprite-header-icons.svg#close-menu" js-close-menu></use>
-          </svg>
-        </button>
+          <button
+            class="page-header__button page-header__button--close"
+            type="button"
+            js-close-menu
+          >
+            <svg
+              class="page-header__icon page-header__icon--cross"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                href="./img/sprite-header-icons.svg#close-menu"
+                js-close-menu
+              ></use>
+            </svg>
+          </button>
         </div>
-        
-        
-        <button class="page-header__button  js-open-menu" type="button" aria-expanded="false" >
-          <svg class="page-header__icon " width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use class="page-header__icon--open" href="./img/sprite-header-icons.svg#menu"  js-open-menu></use>
+
+        <button
+          class="page-header__button page-header__button--open"
+          type="button"
+          aria-expanded="false"
+          js-open-menu
+        >
+          <svg
+            class="page-header__icon page-header__icon--menu"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use href="./img/sprite-header-icons.svg#menu" js-open-menu></use>
           </svg>
         </button>
       </div>
@@ -637,7 +689,7 @@
     <!-- Підвал -->
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div class="address-container">
+        <div id="contacts" class="address-container">
           <a class="logo page-footer__logo" href="./index.html"
             >Web<span class="logo--light">Studio</span></a
           >

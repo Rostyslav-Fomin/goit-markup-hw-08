@@ -3,8 +3,28 @@
 .portfolio__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   margin-bottom: 50px;
+
+  @media screen and (max-width: 479px) {
+      max-width: 320px;
+      height: 150px;
+      justify-content: start;
+      align-content: space-between;
+      margin-bottom: 40px;
+    }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+      min-width: 320px;
+      height: 91px;
+      justify-content: start;
+      align-content: space-between;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
 }
 
 .portfolio__item {
@@ -26,7 +46,7 @@
 
   font-size: 16px;
   font-weight: 500;
-  line-height: 1, 62;
+  line-height: 1.62;
   letter-spacing: 0.48px;
   cursor: pointer;
 

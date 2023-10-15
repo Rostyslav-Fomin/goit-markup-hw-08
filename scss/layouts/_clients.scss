@@ -9,6 +9,10 @@
 .clients__item {
   max-width: calc(100% / 2 - 30px);
   margin: 15px;
+
+  @media screen and (max-width: 480px) {
+    max-width: 210px;
+  }
 }
 
 .clients__link {
@@ -16,7 +20,6 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
   height: 92px;
 
   border-radius: 4px;
@@ -30,6 +33,16 @@
   &:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 170px;
   }
 }
 
