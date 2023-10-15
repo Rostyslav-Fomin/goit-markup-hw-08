@@ -91,6 +91,10 @@
   line-height: 1.22;
   letter-spacing: 0.36px;
   text-decoration: none;
+
+  @media screen and (max-width: 450px) {
+    font-size: 14px;
+  }
 }
 .header-social__separator {
   display: block;

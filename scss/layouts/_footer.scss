@@ -17,9 +17,9 @@
     align-items: baseline;
     flex-wrap: wrap;
   }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      justify-content: space-around;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
+  }
 }
 
 .page-footer__logo {
@@ -34,8 +34,8 @@
 .address-container {
   margin-bottom: 60px;
   @media screen and (max-width: 1199px) {
-      text-align: center;
-    }
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     width: 231px;
@@ -111,10 +111,9 @@
   }
   .subscription & {
     @media screen and (max-width: 1199px) {
-    text-align: center;
+      text-align: center;
+    }
   }
-  }
-  
 }
 
 /* Форма */
@@ -145,11 +144,12 @@
     line-height: 1.25;
     letter-spacing: 0.48px;
   }
-
+  @media screen and (max-width: 450px) {
+    max-width: 320px;
+  }
   @media screen and (max-width: 1199px) {
     margin-right: 0;
     margin-bottom: 20px;
-
   }
 }
 
