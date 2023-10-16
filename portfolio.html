@@ -37,12 +37,12 @@
           <nav class="nav">
             <ul class="nav-list list">
               <li class="nav__item">
-                <a class="nav__link" href="./index.html"
-                  >Студія</a
-                >
+                <a class="nav__link" href="./index.html">Студія</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
+                <a class="nav__link nav__link--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#contacts">Контакти</a>
@@ -175,13 +175,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-1.jpg"
-                    alt="зображення веб-сайту, відкритому на ноутбуці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-1-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-1-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-1-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-1-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-1-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-1-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-1-dt.jpg"
+                      alt="Веб-сайт відкритий на ноутбуці"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -197,13 +228,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-2.jpg"
-                    alt="постер з баскедболістами"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-2-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-2-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-2-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-2-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-2-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-2-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-2-dt.jpg"
+                      alt="Два баскедболісти"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -221,13 +283,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-3.jpg"
-                    alt="логотип ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-3-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-3-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-3-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-3-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-3-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-3-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-3-dt.jpg"
+                      alt="Логотип рибного ресторану"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -243,13 +336,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-4.jpg"
-                    alt="фото навушників"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-4-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-4-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-4-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-4-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-4-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-4-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-4-dt.jpg"
+                      alt="Навушники"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -265,13 +389,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-5.jpg"
-                    alt="біла та коричнева коробка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-5-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-5-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-5-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-5-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-5-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-5-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-5-dt.jpg"
+                      alt="Дві коробки"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -287,13 +442,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-6.jpg"
-                    alt="зображення веб-сайту, відкритому на аймак"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-6-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-6-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-6-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-6-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-6-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-6-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-6-dt.jpg"
+                      alt="Веб-сайт відкритий на моніторі"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -309,13 +495,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-7.jpg"
-                    alt="розгорнутий журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-7-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-7-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-7-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-7-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-7-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-7-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-7-dt.jpg"
+                      alt="фото журналу"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -331,13 +548,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-8.jpg"
-                    alt="лейбл на нитці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-8-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-8-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-8-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-8-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-8-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-8-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-8-dt.jpg"
+                      alt="Лейбл товару"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -353,13 +601,44 @@
             <li class="portfolio__card grid-item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__overlay">
-                  <img
-                    class="portfolio__image img"
-                    src="./img/portfolio/portfolio-img-9.jpg"
-                    alt="веб-додаток відкритий на ноутбуці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- набір зображень для смартфонів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-9-mb.jpg   1x,
+                        ./img/portfolio/portfolio-img-9-mb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для планшетів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-9-tb.jpg    1x,
+                        ./img/portfolio/portfolio-img-9-tb@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- набір зображень для десктопів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/portfolio-img-9-dt.jpg    1x,
+                        ./img/portfolio/portfolio-img-9-dt@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- дефолтне зображення -->
+                    <img
+                      class="team__image img"
+                      src="./img/portfolio/portfolio-img-9-dt.jpg"
+                      alt="Веб-додаток відкритий на ноутбуці"
+                      width="270"
+                      height="260"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
