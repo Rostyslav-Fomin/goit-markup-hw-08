@@ -20,6 +20,8 @@
   --portfolio-overlay: rgba(33, 150, 243, 0.9);
   --card-gap: 30px;
   --grid-items: 4;
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
 }
 
 .visually-hidden {
@@ -45,7 +47,7 @@
 
 body {
   background-color: var(--background-color-1);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--second-font);
 }
 
 .img {
@@ -1367,12 +1369,10 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .page-footer__logo {
-    display: inline-block;
-    margin-bottom: 28px;
-    padding: 0;
-  }
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 28px;
+  padding: 0;
 }
 
 /* Адреса */
