@@ -30,9 +30,8 @@
           >Web<span class="logo--dark">Studio</span></a
         >
         <div
-          class="page-header__menu mobile-menu"
+          class="page-header__menu mobile-menu js-menu-container"
           id="mobile-menu"
-          js-menu-container
         >
           <nav class="nav">
             <ul class="nav-list list">
@@ -111,9 +110,8 @@
             </li>
           </ul>
           <button
-            class="page-header__button page-header__button--close"
+            class="page-header__button page-header__button--close js-close-menu"
             type="button"
-            js-close-menu
           >
             <svg
               class="page-header__icon page-header__icon--cross"
@@ -123,17 +121,15 @@
             >
               <use
                 href="./img/sprite-header-icons.svg#close-menu"
-                js-close-menu
               ></use>
             </svg>
           </button>
         </div>
 
         <button
-          class="page-header__button page-header__button--open"
+          class="page-header__button page-header__button--open js-open-menu"
           type="button"
           aria-expanded="false"
-          js-open-menu
         >
           <svg
             class="page-header__icon page-header__icon--menu"
@@ -141,7 +137,7 @@
             height="40"
             aria-label="Перемикач мобільного меню"
           >
-            <use href="./img/sprite-header-icons.svg#menu" js-open-menu></use>
+            <use href="./img/sprite-header-icons.svg#menu"></use>
           </svg>
         </button>
       </div>
@@ -306,20 +302,18 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="
-                    img\tasks\wright_code-dt.jpg    1x,
-                    img\tasks\wright_code-dt@2x.jpg 2x
+                  srcset="./img/tasks/wright_code-dt.jpg    1x,
+                    ./img/tasks/wright_code-dt@2x.jpg  2x
                   "
                   type="image/jpg"
                 />
                 <img
                   class="gallery__image img"
-                  src="img\tasks\wright_code-dt.jpg"
+                  src="./img/tasks/wright_code-dt.jpg"
                   alt="розробник пише код"
                   width="370"
                   height="294"
-                  loading="lazy"
-                />
+                  loading="lazy"/>
               </picture>
               <p class="gallery__text">Десктопні додатки</p>
             </li>
@@ -328,14 +322,14 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img\tasks\design_for_smartphones-dt.jpg    1x,
-                    img\tasks\design_for_smartphones-dt@2x.jpg 2x
+                    ./img/tasks/design_for_smartphones-dt.jpg    1x,
+                    ./img/tasks/design_for_smartphones-dt@2x.jpg 2x
                   "
                   type="image/jpg"
                 />
                 <img
                   class="gallery__image img"
-                  src="img\tasks\design_for_smartphones-dt.jpg"
+                  src="./img/tasks/design_for_smartphones-dt.jpg"
                   alt="розробник пише код"
                   width="370"
                   height="294"
@@ -349,14 +343,14 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img\tasks\palitra-dt.jpg    1x,
-                    img\tasks\palitra-dt@2x.jpg 2x
+                    ./img/tasks/palitra-dt.jpg    1x,
+                    ./img/tasks/palitra-dt@2x.jpg 2x
                   "
                   type="image/jpg"
                 />
                 <img
                   class="gallery__image img"
-                  src="img\tasks\palitra-dt.jpg"
+                  src="./img/tasks/palitra-dt.jpg"
                   alt="розробник пише код"
                   width="370"
                   height="294"
@@ -386,7 +380,7 @@
                 />
                 <!-- набір зображень для планшетів -->
                 <source
-                  media="(min-width: 768px)"
+                  media="(max-width: 1199px)"
                   srcset="
                     ./img/team/igor-tb.jpg    1x,
                     ./img/team/igor-tb@2x.jpg 2x
@@ -495,7 +489,7 @@
                 />
                 <!-- набір зображень для планшетів -->
                 <source
-                  media="(min-width: 768px)"
+                  media="( max-width: 1199px)"
                   srcset="
                     ./img/team/olga-tb.jpg    1x,
                     ./img/team/olga-tb@2x.jpg 2x
@@ -604,7 +598,7 @@
                 />
                 <!-- набір зображень для планшетів -->
                 <source
-                  media="(min-width: 768px)"
+                  media="(max-width: 1199px)"
                   srcset="
                     ./img/team/mykola-tb.jpg    1x,
                     ./img/team/mykola-tb@2x.jpg 2x
@@ -713,7 +707,7 @@
                 />
                 <!-- набір зображень для планшетів -->
                 <source
-                  media="(min-width: 768px)"
+                  media="(max-width: 1199px)"
                   srcset="
                     ./img/team/myhailo-tb.jpg    1x,
                     ./img/team/myhailo-tb@2x.jpg 2x
