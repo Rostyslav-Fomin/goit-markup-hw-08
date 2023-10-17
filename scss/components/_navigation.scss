@@ -15,12 +15,11 @@
     list-style: none;
   }
     .page-header__menu.is-open & {
-      margin-bottom: 306px;
-      @media screen and (min-width: 300px) {
+      @media screen and (max-width: 320px) {
           margin-bottom: 180px;
         }
-      @media screen and (min-width: 321px) and (max-width: 479px) {
-        margin-bottom: 300px;
+      @media screen and (min-width: 321px) {
+        margin-bottom: 306px;
       }
     }
 }

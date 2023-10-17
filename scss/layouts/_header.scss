@@ -100,6 +100,9 @@
   @media screen and (min-width: 321px) and (max-width: 479px) {
     font-size: 12px;
   }
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
 }
 .header-social__separator {
   display: block;
