@@ -23,18 +23,16 @@
 }
 
 .page-footer__logo {
-  
-    display: inline-block;
-    margin-bottom: 28px;
-    padding: 0;
-
+  display: inline-block;
+  margin-bottom: 28px;
+  padding: 0;
 }
 
 /* Адреса */
 .address-container {
-  margin-bottom: 60px;
   @media screen and (max-width: 1199px) {
     text-align: center;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -106,13 +104,8 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
-  }
-  .subscription & {
-    @media screen and (max-width: 1199px) {
-      text-align: center;
-    }
   }
 }
 
