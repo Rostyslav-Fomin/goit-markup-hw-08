@@ -33,15 +33,16 @@
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
 }
 
 .portfolio__overlay {
   position: relative;
   overflow: hidden;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-      flex-grow: 1;
-    }
 }
 
 .portfolio__overlay-text {
@@ -98,6 +99,10 @@
   border-right: 1px solid var(--border-second-color);
   border-bottom: 1px solid var(--border-second-color);
   border-left: 1px solid var(--border-second-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-grow: 1;
+    }
 }
 
 .portfolio__label {
